@@ -19,18 +19,94 @@ header{
             left: 45%;
         }
         .right-section, .left-section {
+            height: 10vh;
             width: 40%;
             border-bottom: 1px solid rgba(#FFFFFF, 0.2);
-            padding-bottom: 10px;
-            ;
+            text-align: center;
             a{ 
                 display: inline-block;
                 width: 24%;
                 color: white;
+                margin-top: 5vh;
+                height: 50%;
             }
         }
         .right-section{
             text-align: end;
         }
+    }
+    .header__main_container{
+        color: white;
+        height: 90vh;
+        width: 90%;
+        margin: 0 auto;
+        @include display-flex(row, space-between, center);
+
+        .title{
+            height: 100%;
+            width: 60%;
+            border-right: 1px solid rgba(#FFFFFF, 0.2);
+            border-left: 1px solid rgba(#FFFFFF, 0.2);
+            text-align: center;
+            @include display-flex(column, center, center);
+
+            p{
+                @include style-text(white, 12px, Open Sans, uppercase);
+                font-weight: bold;
+                letter-spacing: 5px;
+            }
+            h1{
+                margin-top: 0;
+                margin-bottom: 32px;
+                @include style-text(white, 96px, Varela Round, uppercase);
+                font-style: round($number: 70%);
+                font-weight: bold;
+            }
+            .colored-block{
+                background: #E8C300;
+                width: 60px;
+                height: 6px;
+                margin-bottom: 32px;
+                
+            }
+
+            button{
+                width: 200px;
+                height: 60px;
+                margin: 0 16px;
+                background: transparent;
+                @include style-text(white, 12px, Open Sans, uppercase);
+                border-radius: 5px;
+                cursor: pointer;
+                &:hover{
+                    background: #E8C300;
+                }
+            }
+        }
+
+        .schedule{
+            @include style-text(white, 12px, Open Sans, title);
+            font-weight: bold;
+            writing-mode: vertical-lr;
+            //TODO change the direction of p
+        }
+
+        .schedule, .social-media{
+            width: 20%;
+        }
+
+        .social-media{
+            @include display-flex(column, center, flex-end);
+            div{
+                width: 60px;
+                height: 60px;
+                border: 1px solid rgba(#FFFFFF, 0.2);
+                border-radius: 50%;
+                @include display-flex(column, center, center);
+                margin-bottom: 20px;
+                cursor: pointer;
+            }
+        }
+
     }
 }

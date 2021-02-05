@@ -8,6 +8,6 @@
 @mixin style-text($color, $size, $family, $transform){
     color: $color;
     font-size: $size;
-    font-family: $family;
+    font-family: $family, sans-serif;
     text-transform: $transform;
 }
