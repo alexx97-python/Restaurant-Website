@@ -1,0 +1,67 @@
+header {
+  background: url("../assests/images/header-bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+
+header .navbar-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 10vh;
+  width: 90%;
+  margin: 0 auto;
+  color: white;
+  font-size: 12px;
+  font-family: Open Sans;
+  text-transform: uppercase;
+}
+
+header .navbar-section .center-section {
+  position: absolute;
+  top: 30px;
+  left: 45%;
+}
+
+header .navbar-section .right-section, header .navbar-section .left-section {
+  width: 40%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 10px;
+}
+
+header .navbar-section .right-section a, header .navbar-section .left-section a {
+  display: inline-block;
+  width: 24%;
+  color: white;
+}
+
+header .navbar-section .right-section {
+  text-align: end;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  text-transform: none;
+  -webkit-text-emphasis: none;
+          text-emphasis: none;
+  text-decoration: none;
+}
+/*# sourceMappingURL=style.css.map */

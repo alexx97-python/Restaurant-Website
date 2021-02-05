@@ -1,0 +1,36 @@
+@import 'mixin';
+
+header{
+    background: url('../assests/images/header-bg.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    .navbar-section{
+        @include display-flex(row, space-between, center);
+        min-height: 10vh;
+        width: 90%;
+        margin: 0 auto;
+        @include style-text(white, 12px, Open Sans, uppercase);
+
+        .center-section{
+            position: absolute;
+            top: 30px;
+            left: 45%;
+        }
+        .right-section, .left-section {
+            width: 40%;
+            border-bottom: 1px solid rgba(#FFFFFF, 0.2);
+            padding-bottom: 10px;
+            ;
+            a{ 
+                display: inline-block;
+                width: 24%;
+                color: white;
+            }
+        }
+        .right-section{
+            text-align: end;
+        }
+    }
+}
