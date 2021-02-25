@@ -5,20 +5,20 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
-    width: 100vw;
-    .navbar-section{
+    width: 100%;
+    .header__navbar{
         @include display-flex(row, space-between, center);
         min-height: 10vh;
-        width: 90%;
-        margin: 0 auto;
+        width: 100%;
         @include style-text(white, 12px, Open Sans, uppercase);
 
-        .center-section{
+        .header__navbar-center{
             position: absolute;
             top: 30px;
-            left: 45%;
+            left: 50%;
+            transform: translateX(-50%);
         }
-        .right-section, .left-section {
+        .header__navbar-right, .header__navbar-left {
             height: 10vh;
             width: 40%;
             border-bottom: 1px solid rgba(#FFFFFF, 0.2);
@@ -31,18 +31,18 @@ header{
                 height: 50%;
             }
         }
-        .right-section{
+        .header__navbar-right{
             text-align: end;
         }
     }
-    .header__main_container{
+    .header__main-container{
         color: white;
         height: 90vh;
         width: 90%;
         margin: 0 auto;
         @include display-flex(row, space-between, center);
 
-        .title{
+        .header__title{
             height: 100%;
             width: 60%;
             border-right: 1px solid rgba(#FFFFFF, 0.2);
@@ -56,6 +56,7 @@ header{
                 letter-spacing: 5px;
             }
             h1{
+                width: 998px;
                 margin-top: 0;
                 margin-bottom: 32px;
                 @include style-text(white, 96px, Varela Round, uppercase);
@@ -70,7 +71,7 @@ header{
                 
             }
 
-            button{
+            .header__title-btn{
                 width: 200px;
                 height: 60px;
                 margin: 0 16px;
@@ -84,18 +85,18 @@ header{
             }
         }
 
-        .schedule{
+        .header__schedule{
             @include style-text(white, 12px, Open Sans, title);
             font-weight: bold;
             writing-mode: vertical-lr;
             //TODO change the direction of p
         }
 
-        .schedule, .social-media{
+        .header__schedule, .header__social-media{
             width: 20%;
         }
 
-        .social-media{
+        .header__social-media{
             @include display-flex(column, center, flex-end);
             div{
                 width: 60px;

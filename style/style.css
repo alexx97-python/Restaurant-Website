@@ -3,10 +3,10 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
 }
 
-header .navbar-section {
+header .header__navbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -21,28 +21,29 @@ header .navbar-section {
       -ms-flex-align: center;
           align-items: center;
   min-height: 10vh;
-  width: 90%;
-  margin: 0 auto;
+  width: 100%;
   color: white;
   font-size: 12px;
   font-family: Open Sans, sans-serif;
   text-transform: uppercase;
 }
 
-header .navbar-section .center-section {
+header .header__navbar .header__navbar-center {
   position: absolute;
   top: 30px;
-  left: 45%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
-header .navbar-section .right-section, header .navbar-section .left-section {
+header .header__navbar .header__navbar-right, header .header__navbar .header__navbar-left {
   height: 10vh;
   width: 40%;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   text-align: center;
 }
 
-header .navbar-section .right-section a, header .navbar-section .left-section a {
+header .header__navbar .header__navbar-right a, header .header__navbar .header__navbar-left a {
   display: inline-block;
   width: 24%;
   color: white;
@@ -50,11 +51,11 @@ header .navbar-section .right-section a, header .navbar-section .left-section a 
   height: 50%;
 }
 
-header .navbar-section .right-section {
+header .header__navbar .header__navbar-right {
   text-align: end;
 }
 
-header .header__main_container {
+header .header__main-container {
   color: white;
   height: 90vh;
   width: 90%;
@@ -74,7 +75,7 @@ header .header__main_container {
           align-items: center;
 }
 
-header .header__main_container .title {
+header .header__main-container .header__title {
   height: 100%;
   width: 60%;
   border-right: 1px solid rgba(255, 255, 255, 0.2);
@@ -95,7 +96,7 @@ header .header__main_container .title {
           align-items: center;
 }
 
-header .header__main_container .title p {
+header .header__main-container .header__title p {
   color: white;
   font-size: 12px;
   font-family: Open Sans, sans-serif;
@@ -104,7 +105,8 @@ header .header__main_container .title p {
   letter-spacing: 5px;
 }
 
-header .header__main_container .title h1 {
+header .header__main-container .header__title h1 {
+  width: 998px;
   margin-top: 0;
   margin-bottom: 32px;
   color: white;
@@ -115,14 +117,14 @@ header .header__main_container .title h1 {
   font-weight: bold;
 }
 
-header .header__main_container .title .colored-block {
+header .header__main-container .header__title .colored-block {
   background: #E8C300;
   width: 60px;
   height: 6px;
   margin-bottom: 32px;
 }
 
-header .header__main_container .title button {
+header .header__main-container .header__title .header__title-btn {
   width: 200px;
   height: 60px;
   margin: 0 16px;
@@ -135,11 +137,11 @@ header .header__main_container .title button {
   cursor: pointer;
 }
 
-header .header__main_container .title button:hover {
+header .header__main-container .header__title .header__title-btn:hover {
   background: #E8C300;
 }
 
-header .header__main_container .schedule {
+header .header__main-container .header__schedule {
   color: white;
   font-size: 12px;
   font-family: Open Sans, sans-serif;
@@ -150,11 +152,11 @@ header .header__main_container .schedule {
           writing-mode: vertical-lr;
 }
 
-header .header__main_container .schedule, header .header__main_container .social-media {
+header .header__main-container .header__schedule, header .header__main-container .header__social-media {
   width: 20%;
 }
 
-header .header__main_container .social-media {
+header .header__main-container .header__social-media {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -170,7 +172,7 @@ header .header__main_container .social-media {
           align-items: flex-end;
 }
 
-header .header__main_container .social-media div {
+header .header__main-container .header__social-media div {
   width: 60px;
   height: 60px;
   border: 1px solid rgba(255, 255, 255, 0.2);
@@ -210,5 +212,10 @@ button {
   border: none;
   padding: 0;
   margin: 0;
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
 }
 /*# sourceMappingURL=style.css.map */
