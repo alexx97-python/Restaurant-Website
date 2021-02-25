@@ -1,7 +1,17 @@
+@import 'mixin';
 @import 'header';
 @import 'toNull';
+@import 'about';
+
+body{
+    width: 100%;
+}
 
 .container{
     max-width: 1240px;
     margin: 0 auto;
+}
+
+.bold{
+    font-weight: bold;
 }

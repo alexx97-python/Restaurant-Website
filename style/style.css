@@ -4,6 +4,7 @@ header {
   background-size: cover;
   height: 100vh;
   width: 100%;
+  margin-bottom: 100px;
 }
 
 header .header__navbar {
@@ -214,8 +215,88 @@ button {
   margin: 0;
 }
 
+img {
+  padding: 0;
+}
+
+.about {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.about .about__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  height: 475px;
+  padding-bottom: 100px;
+}
+
+.about .about__wrapper .about__left {
+  text-align: center;
+  width: 50%;
+}
+
+.about .about__wrapper .about__left .about__left-title {
+  width: 100%;
+  color: black;
+  font-size: 36px;
+  font-family: Banny, sans-serif;
+  text-transform: uppercase;
+}
+
+.about .about__wrapper .about__left .about__text-item {
+  color: black;
+  font-size: 14px;
+  font-family: Banny, sans-serif;
+  text-transform: none;
+  font-weight: 400;
+  line-height: 24px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.about .about__wrapper .about__right {
+  width: 50%;
+  height: 100%;
+  background: url("../assests/images/about-img.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.about .about__wrapper .about__right .about__yellow-box {
+  height: 210px;
+  width: 210px;
+  border: 20px solid #E8C300;
+  position: absolute;
+  right: -50px;
+  top: 150px;
+}
+
+body {
+  width: 100%;
+}
+
 .container {
   max-width: 1240px;
   margin: 0 auto;
+}
+
+.bold {
+  font-weight: bold;
 }
 /*# sourceMappingURL=style.css.map */
