@@ -1,0 +1,61 @@
+.team{
+    width: 100%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../assests//images/team-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 675px;
+    margin-bottom: 100px;
+    .team__wrapper{
+        @include display-flex(column, center, center);
+        color: white;
+
+        .team__title{
+            height: 60px;
+            width: 100%;
+            text-align: center;
+            padding-top: 40px;
+            @include style-text(white, 12px, Open Sans, uppercase);
+            letter-spacing: 5px;
+            font-weight: 700;
+            line-height: 14px;
+        }
+
+
+        .team__main{
+            @include display-flex(row, space-between, center);
+
+            .team__main-left{
+                width: 48%;
+                position: relative;
+
+                .team__yellow-box{
+                    height: 210px;
+                    width: 210px;
+                    border: 20px solid #E8C300;
+                    position: absolute;
+                    left: -50px;
+                    top: 150px;
+                }
+            }
+
+            .team__main-right{
+                width: 48%;
+                text-align: center;
+
+                .team__right-title{
+                    @include style-text(#FFFFFF, 36px, Banny, uppercase);
+                    line-height: 48px;
+                }
+
+                .team__text-item{
+                    @include style-text(#FFFFFF, 14px, Banny, none);
+                    font-weight: 400;
+                    line-height: 24px;
+                    width: 80%;
+                    margin: 0 auto;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+}
